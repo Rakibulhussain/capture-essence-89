@@ -1,6 +1,3 @@
-// Replace these placeholder URLs with your ImageKit links.
-// Example ImageKit URL: https://ik.imagekit.io/your_id/folder/photo.jpg
-
 export type Photo = {
   src: string;
   alt: string;
@@ -15,8 +12,8 @@ export type Category = {
   photos: Photo[];
 };
 
-const ph = (seed: string, w = 1200, h = 1500) =>
-  `https://picsum.photos/seed/${seed}/${w}/${h}`;
+// ❌ REMOVE this dummy function
+// const ph = ...
 
 export const categories: Category[] = [
   {
@@ -24,72 +21,284 @@ export const categories: Category[] = [
     title: "Weddings",
     tagline: "Cinematic. Timeless. Yours.",
     description:
-      "Over 30+ weddings documented across Assam — candid storytelling blended with creative composition, capturing both grand moments and the smallest emotions.",
-    cover: ph("wed-cover", 1600, 1000),
+      "Over 30+ weddings documented across Assam — candid storytelling blended with creative composition.",
+
+    // ✅ Replace cover image
+    cover:
+      "https://ik.imagekit.io/il1hcqwbr/img/IMG_6012.JPG.jpeg?updatedAt=1777720197448",
+
+    // ✅ Add your real wedding photos here
     photos: [
-      { src: ph("wed-1"), alt: "Wedding moment 1" },
-      { src: ph("wed-2"), alt: "Wedding moment 2" },
-      { src: ph("wed-3"), alt: "Wedding moment 3" },
-      { src: ph("wed-4"), alt: "Wedding moment 4" },
-      { src: ph("wed-5"), alt: "Wedding moment 5" },
-      { src: ph("wed-6"), alt: "Wedding moment 6" },
-      { src: ph("wed-7"), alt: "Wedding moment 7" },
-      { src: ph("wed-8"), alt: "Wedding moment 8" },
+      {
+        src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6012.JPG.jpeg?updatedAt=1777720197448",
+        alt: "Wedding moment",
+      },
+      {
+        src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6001.JPG.jpeg?updatedAt=1777720195699",
+        alt: "Wedding couple",
+      },
+      {
+        src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_5335.PNG?updatedAt=1777720180402",
+        alt: "Wedding detail",
+      },
+
+      {
+        src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6488.JPG.jpeg?updatedAt=1777720179552",
+        alt: "Wedding candid",
+      },
+        {
+        src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6075.JPG.jpeg?updatedAt=1777720178062",
+        alt: "Wedding candid",
+      },
+      
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6037.JPG.jpeg?updatedAt=1777720177768",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6072.JPG.jpeg?updatedAt=1777720176130",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6065.JPG.jpeg?updatedAt=1777720174076",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6070.JPG.jpeg?updatedAt=1777720175546",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6086.JPG.jpeg?updatedAt=1777720175458",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6066.JPG.jpeg?updatedAt=1777720175612",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_2337.JPG.jpeg?updatedAt=1777720175953",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_1837.JPG.jpeg?updatedAt=1777720174239",
+    alt: "Wedding candid",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6075.JPG.jpeg?updatedAt=1777720178062",
+    alt: "Wedding candid",
+  },
+  {src : "https://ik.imagekit.io/il1hcqwbr/img/IMG_1836.JPG.jpeg?updatedAt=1777720172669", alt: "Wedding candid"},
+{ src:"  ",alt: "Wedding candid"},
+   
+{ src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_5333.JPG.jpeg?updatedAt=1777720168493 ",alt: "Wedding candid"},
+{ src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_5334.JPG.jpeg?updatedAt=1777720169707 ",alt: "Wedding candid"},
+{ src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_6487.JPG.jpeg?updatedAt=1777720166575 ",alt: "Wedding candid"},
+{ src:"https://ik.imagekit.io/il1hcqwbr/img/IMG_6485.JPG.jpeg?updatedAt=1777720162575  ",alt: "Wedding candid"},
+{ src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_5715.TIF?updatedAt=1777720160442 ",alt: "Wedding candid"},
+
+
+
+
+
+
+
+
+
     ],
   },
+
   {
     slug: "fashion",
     title: "Fashion",
     tagline: "Personality, aesthetics, identity.",
     description:
-      "Styled editorial shoots that highlight personality and brand identity — clean composition with cinematic tones.",
-    cover: ph("fashion-cover", 1600, 1000),
+      "Styled editorial shoots that highlight personality and brand identity.",
+
+    cover:
+      "https://ik.imagekit.io/il1hcqwbr/img/IMG_8645.JPG.jpeg?updatedAt=1777720197089",
+
     photos: [
-      { src: ph("fashion-1"), alt: "Fashion shot 1" },
-      { src: ph("fashion-2"), alt: "Fashion shot 2" },
-      { src: ph("fashion-3"), alt: "Fashion shot 3" },
-      { src: ph("fashion-4"), alt: "Fashion shot 4" },
-      { src: ph("fashion-5"), alt: "Fashion shot 5" },
-      { src: ph("fashion-6"), alt: "Fashion shot 6" },
+      {
+        src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_8645.JPG.jpeg?updatedAt=1777720197089",
+          alt: "Fashion shoot",
+      },
+
+      { src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_8644.JPG.jpeg?updatedAt=1777720195049",alt: "Fashion shoot",},
+       { src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_8645.JPG.jpeg?updatedAt=1777720197089",alt: "Fashion shoot",},
+        { src:"https://ik.imagekit.io/il1hcqwbr/img/IMG_8656.JPG.jpeg?updatedAt=1777720191631 ",alt: "Fashion shoot",},
+         { src:"https://ik.imagekit.io/il1hcqwbr/img/IMG_8654.JPG.jpeg?updatedAt=1777720191720 ",alt: "Fashion shoot",},
+          { src:"https://ik.imagekit.io/il1hcqwbr/img/IMG_8646.JPG.jpeg?updatedAt=1777720191476 ",alt: "Fashion shoot",},
+           { src:"https://ik.imagekit.io/il1hcqwbr/img/IMG_8653.JPG.jpeg?updatedAt=1777720190265 ",alt: "Fashion shoot",},
+
+        {src:" https://ik.imagekit.io/il1hcqwbr/img/IMG_2334.JPG.jpeg?updatedAt=1777720177735" ,alt: "Fashion shoot"},
+       
+
+
+
     ],
+
   },
+
   {
     slug: "music",
     title: "Live & Music",
     tagline: "The energy of the stage.",
     description:
-      "Working with renowned and playback singers — live performances, portraits, and promotional shoots, captured with raw clarity.",
-    cover: ph("music-cover", 1600, 1000),
+      "Live performances and music photography capturing raw stage energy.",
+
+    cover:
+      "https://ik.imagekit.io/il1hcqwbr/img/IMG_5334.JPG.jpeg?updatedAt=1777720169707",
+
     photos: [
-      { src: ph("music-1"), alt: "Live music 1" },
-      { src: ph("music-2"), alt: "Live music 2" },
-      { src: ph("music-3"), alt: "Live music 3" },
-      { src: ph("music-4"), alt: "Live music 4" },
-      { src: ph("music-5"), alt: "Live music 5" },
-      { src: ph("music-6"), alt: "Live music 6" },
-    ],
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.15%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.16%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.15%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.15%20PM%20(2).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.16%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.16%20PM%20(2).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.16%20PM%20(4).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.20%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.19%20PM%20(2).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.17%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.41.24%20PM%20(2).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.41.24%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.53%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.53%20PM%20(2).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.41.25%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.41.23%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.55%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.54%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.53%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.54%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.17%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.18%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.19%20PM.jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.20%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.19%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/WhatsApp%20Image%202026-05-02%20at%204.39.18%20PM%20(1).jpeg",
+    alt: "Music performance",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_5334.JPG.jpeg?updatedAt=1777720169707",
+    alt: "Music performance",
+  }
+]
   },
 ];
 
-export const heroImage = ph("hero-bhaskar", 1920, 1080);
-export const portraitImage = ph("bhaskar-portrait", 900, 1200);
+// ✅ Hero image (top banner)
+export const heroImage =
+  "https://ik.imagekit.io/il1hcqwbr/img/IMG_6012.JPG.jpeg?updatedAt=1777720197448";
 
+// ✅ About section photo
+export const portraitImage =
+  "https://ik.imagekit.io/il1hcqwbr/img/IMG_8645.JPG.jpeg?updatedAt=1777720197089";
+
+// ✅ Featured gallery
 export const featured: Photo[] = [
-  { src: ph("feat-1", 800, 800), alt: "Featured 1" },
-  { src: ph("feat-2", 800, 800), alt: "Featured 2" },
-  { src: ph("feat-3", 800, 800), alt: "Featured 3" },
-  { src: ph("feat-4", 800, 800), alt: "Featured 4" },
-  { src: ph("feat-5", 800, 800), alt: "Featured 5" },
-  { src: ph("feat-6", 800, 800), alt: "Featured 6" },
-  { src: ph("feat-7", 800, 800), alt: "Featured 7" },
-  { src: ph("feat-8", 800, 800), alt: "Featured 8" },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_6012.JPG.jpeg?updatedAt=1777720197448",
+    alt: "Featured",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_8645.JPG.jpeg?updatedAt=1777720197089",
+    alt: "Featured",
+  },
+  {
+    src: "https://ik.imagekit.io/il1hcqwbr/img/IMG_5334.JPG.jpeg?updatedAt=1777720169707",
+    alt: "Featured",
+  },
 ];
 
+
+
+
+
+// ✅ Contact fix
 export const contact = {
-  email: "bhaskar@example.com",
+  email: "barmanbhaskarrrrr914@gmail.com",
   instagram: "https://instagram.com/your_handle",
   instagramHandle: "@your_handle",
-  whatsapp: "+919999999999", // international format, no spaces
-  whatsappDisplay: "+91 99999 99999",
+
+  // ❗ IMPORTANT FIX
+  whatsapp: "https://wa.me/919394212929",
+  whatsappDisplay: "+91 93942 12929",
+
   location: "Assam, India",
 };
